@@ -4,6 +4,7 @@
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="translate_sample" xsi:type="object">Kkkonrad\Console29\Console\Command\TranslateSampleCommand</item>
+		<item name="send_phrases" xsi:type="object">Kkkonrad\Console29\Console\Command\SendPhrasesCommand</item>
             </argument>
         </arguments>
     </type>
