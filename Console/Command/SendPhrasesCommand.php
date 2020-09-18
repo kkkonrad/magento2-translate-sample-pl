@@ -57,6 +57,7 @@ class SendPhrasesCommand extends Command
         $this->sendPhrases('eav_attribute_group','attribute_group_id','attribute_group_name');
         $this->sendPhrases('eav_attribute_option_value','value_id','value');
         $this->sendPhrases('eav_attribute_set','attribute_set_id',"attribute_set_name");
+	$this->sendPhrases('eav_attribute_label','attribute_label_id',"value");
         $this->sendPhrases('rating','rating_id',"rating_code");
         $this->sendPhrases('catalog_category_entity_varchar','value_id',"value","attribute_id=45");
         $this->sendPhrases('catalog_product_bundle_option_value','value_id','title');
