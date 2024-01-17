@@ -46,7 +46,7 @@ class TranslateSampleCommand extends Command
                         $query = "update $tablename set $v = '".
                         addslashes($translated).
                         "' where $idfiled = '".$att[$idfiled]."'";
-                        $connection->query($query);
+                        $connection->exec($query);
                     }
                 }
             }
@@ -79,6 +79,7 @@ class TranslateSampleCommand extends Command
         $this->translateByMagento('tax_class','class_id',"class_name");
         $this->translateByMagento('widget_instance','instance_id','title');
         $output->writeln('Done!');
+	return 0;
     }
 
 }
