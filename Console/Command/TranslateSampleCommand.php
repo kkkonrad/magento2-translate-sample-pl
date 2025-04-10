@@ -11,7 +11,9 @@ use Symfony\Component\Console\Input\InputInterface;
  */
 class TranslateSampleCommand extends Command
 {
-
+    protected $_resource;
+    protected $_resolver;
+    protected $_state;
     var $_source = 'en';
     var $_target = 'pl';
 
